@@ -5,15 +5,17 @@ Tested with:
 
 ## Building/deploying all modules
 ```shell
-# build all modules
+# build 
 ./mvnw clean package
 
+
+# build the images 
+
  docker build -t spring-postgresql-demo .
- docker image tag spring-postgresql-app quay.io/<org>/spring-postgresql-demo:v0.0.1
- docker push  quay.io/<org>/spring-postgresql-demo:v0.0.1       
-
+ docker image tag spring-postgresql-demo quay.io/<org>/spring-postgresql-demo:v0.0.1
+ 
 # push the images to your docker image registry
-
+docker push  quay.io/<org>/spring-postgresql-demo:v0.0.1         
 
 # deploy the application to a OpenShift cluster
 oc apply -f k8s/deploy-postgresql-app.yaml 
