@@ -9,7 +9,7 @@ Tested with:
 ./mvnw clean package
 
  docker build -t spring-postgresql-demo .
- docker image tag spring-postgresql-app quay.io/<org>/spring-postgresql-demo:v0.0.1
+ docker image tag spring-postgresql-demo quay.io/<org>/spring-postgresql-demo:v0.0.1
  docker push  quay.io/<org>/spring-postgresql-demo:v0.0.1       
 
 # push the images to your docker image registry
