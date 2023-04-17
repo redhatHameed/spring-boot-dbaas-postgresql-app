@@ -14,7 +14,7 @@ Tested with:
  docker build -t spring-postgresql-demo .
  docker image tag spring-postgresql-demo quay.io/<org>/spring-postgresql-demo:v0.0.1
  
-# push the images to your docker image registry
+# push the images to your image registry
 docker push  quay.io/<org>/spring-postgresql-demo:v0.0.1         
 
 # deploy the application to a OpenShift cluster
